@@ -41,8 +41,8 @@ function draw() {
         currentPath.push(point);
     }
 
-    clearButton.x = 1200;
-    clearButton.y = 50;
+    //clearButton.x = 1200;
+    //clearButton.y = 50;
 
     stroke(255);
     strokeWeight(4);
