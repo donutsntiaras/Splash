@@ -5,7 +5,7 @@ var currentPath = [];
 var isDrawing = false;
 
 function setup() {
-    canvas = createCanvas(400, 400);
+    canvas = createCanvas(displayWidth,displayHeight);
 
     canvas.mousePressed(startPoint);
     canvas.mouseReleased(endPoint);
@@ -40,6 +40,9 @@ function draw() {
         };
         currentPath.push(point);
     }
+
+    clearButton.x = 1200;
+    clearButton.y = 50;
 
     stroke(255);
     strokeWeight(4);
